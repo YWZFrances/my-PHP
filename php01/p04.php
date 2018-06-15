@@ -9,7 +9,7 @@ echo $x;
 echo "<br>"; 
 //var_dump返回的是变量的数据类型和值
 //php不管是什么进制总是以十进制表示
-$x = 5985;
+$x = 598511111111;
 var_dump($x);
 echo "<br>"; 
 $x = -345; // 负数 
@@ -37,4 +37,22 @@ var_dump($cars);
 echo "<br>"; 
 print_r ($cars);
 echo "<br>"; 
+	
+	class Car
+	{
+		var $color;
+		function __construct($color="blue"){
+			$this->color = $color;
+		}
+		function what_color(){
+			return $this->color;
+		}
+	}
+	
+	echo "<br>";
+		
+	$x = "hello world!!!";
+	$x = null;
+	var_dump($x);
+	
 ?>
