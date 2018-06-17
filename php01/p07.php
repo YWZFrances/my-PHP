@@ -74,5 +74,50 @@ $i=5;
 echo $i--; // 输出5
 echo '<br>';  // 换行
 	
+$x = array("name"=>"red","color"=>"green");
+$y = array("c"=>"blue","d"=>"yellow");
+$z = $x+$y;//数组$x和$y合并
+echo '<br>';
+var_dump($z);
+echo '<br>';
+print_r ($z);
+echo '<br>';
 	
+var_dump($x == $y);
+echo '<br>';
+	var_dump($x === $y);
+echo '<br>';
+	var_dump($x != $y);
+echo '<br>';
+	var_dump($x<>$y);
+echo '<br>';
+	var_dump($x !== $y);	
+echo '<br>';
+	
+//三目运算符
+$test = "yuewenzhe";
+$a = ($test == "yuewen") ? "123" : 'nobody';
+echo $a, PHP_EOL;
+
+echo ("<br />");
+
+//PHP7以后才支持组合比较符
+// 整型
+//echo 1 <=> 1; // 0
+//echo 1 <=> 2; // -1
+//echo 2 <=> 1; // 1
+
+
+$a = 3;
+$b = false;
+$c = $a or $b;
+var_dump($c);// 这里的 $c 为 int 值3，而不是 boolean 值 true
+$d = $a || $b;//这里的 $d 就是 boolean 值 true 
+var_dump($d);
+
+
+
+
+
+
 ?>

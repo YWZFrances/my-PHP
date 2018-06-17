@@ -1,5 +1,5 @@
 <?php
-header("Content-type: text/html;charset = utf-8");
+header("Content-type: text/html;charset=utf-8");
 define("GREETING","这是区分大小写");
 echo GREETING;
 echo "<br>";
