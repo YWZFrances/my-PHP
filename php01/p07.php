@@ -116,6 +116,16 @@ $d = $a || $b;//这里的 $d 就是 boolean 值 true
 var_dump($d);
 
 
+$a = 1;
+$b = 2;
+$c = 3;
+$d = $a + $b * $c;
+echo $d;//7
+echo "\n";
+$e = ($a + $b) * $c;  // 使用括号
+echo $e;//9
+echo "\n";
+
 
 
 
