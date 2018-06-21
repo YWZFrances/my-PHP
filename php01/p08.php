@@ -14,4 +14,18 @@ if ($t<20){
 
 echo $t;
 
+echo "<br />";
+
+$color = "red";
+switch($color){
+	case "red":
+		echo "红色";
+		break;
+	case "blue":
+		echo "蓝色";
+		break;
+	default:
+		echo "你啥都不喜欢";
+}
+
 ?>
